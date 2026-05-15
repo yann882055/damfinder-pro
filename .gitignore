@@ -1,0 +1,50 @@
+# ── Build artefacts ───────────────────────────────────────────────────────────
+dist/
+build/
+*.spec.bak
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv_build/
+venv/
+.venv/
+env/
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# ── PyInstaller internals ─────────────────────────────────────────────────────
+*.manifest
+*.spec.tmp
+
+# ── Licence storage (user-specific, never commit) ─────────────────────────────
+*.dat
+license.dat
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+build_log.txt
+*.log
+
+# ── Data outputs (user-generated) ────────────────────────────────────────────
+outputs/
+*.xlsx
+*.html
+*.shp
+*.dbf
+*.shx
+*.prj
+*.cpg
