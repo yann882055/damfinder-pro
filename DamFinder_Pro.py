@@ -26,7 +26,8 @@ os.environ.setdefault("QTWEBENGINE_CHROMIUM_FLAGS", "--disable-gpu")
 
 from PyQt5.QtWidgets import (
     QApplication, QSplashScreen, QDialog, QVBoxLayout, QHBoxLayout,
-    QLabel, QLineEdit, QPushButton, QProgressBar, QFrame, QMessageBox
+    QLabel, QLineEdit, QPushButton, QProgressBar, QFrame, QMessageBox,
+    QWidget
 )
 from PyQt5.QtCore import Qt, QTimer, QThread, pyqtSignal
 from PyQt5.QtGui import (QPixmap, QFont, QColor, QPainter, QLinearGradient,
