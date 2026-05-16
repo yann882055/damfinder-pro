@@ -33,6 +33,9 @@ from PyQt5.QtCore import Qt, QTimer, QThread, pyqtSignal
 from PyQt5.QtGui import (QPixmap, QFont, QColor, QPainter, QLinearGradient,
                          QBrush, QPen)
 
+# WebEngine MUST be imported before QApplication is instantiated
+from PyQt5.QtWebEngineWidgets import QWebEngineView  # noqa: F401
+
 import license_manager as lm
 
 
@@ -427,6 +430,7 @@ def main():
     # Enable High-DPI scaling
     QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
     QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps,    True)
+    QApplication.setAttribute(Qt.AA_ShareOpenGLContexts,  True)
 
     app = QApplication(sys.argv)
     app.setApplicationName("DamFinder Pro")
